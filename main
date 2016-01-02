@@ -1,0 +1,38 @@
+
+Solution 1:
+Send bash script through software USB (long press to install script sending keystrokes)
+MCU:
+	ATTiny45 ($1.22 on eBay)
+	alt:ATTINY48-AU	$1.088@10 on Digi-Key
+	alt:ATTINY85-20PU ($1.15 on tayda)
+	
+Solution 2:
+Connector on USB port (w/MCU), separate (wireless) controller, physically cut off USB power
+
+Box can be charged w/USB
+Test LEDs?
+
+Wired requires: receiver (), switch/transistor (1 pin)
+Wireless requires: transmitter (), button (1 pin)
+
+Switching regulator:
+Diodes Inc.	$0.339	2.7-5.5 to 0.6-5.5
+
+MCU (@10)
+PIC10F200T-I/OT	$0.42	3 I/O
+PIC10F220T-I/OT	$0.46	4 I/O
+PIC16F54-I/SO	$0.48	12 I/O
+ATTINY4-TSHR	$0.837	4 I/O
+ATTINY13A-SSU	$1.088	6 I/O
+
+RF receivers: 5v pref
+Silicon Labs	SI4356-B1A-FM	$1.39	1.8-3.6V	315-917MHz	FSK,GFSK,OOK	20-QFN
+Microchip	MRF39RAT-I/LY	$1.59	1.8-3.6V	433,868,918MHz	ISM		24-QFN
+Maxim		MAX7036GTP+	$1.738	3.3,5V		300-450MHz	ASK,OOK		20-TQFN-EP (5x5)
+Infineon	TDA7200		$1.954	4.5-5.5V	400-440MHz	ASK,FSK		28-TSSOP
+
+Solution 2.5: 
+Switch power with keyboard's built-in USB extension (optionally use another cable for poopkeyboards), make 2 "usb" devices, one of them connects to the computer and takes in 2 USB (kb and ext)
+
+Solution 3.0:
+RFID tags around the keyboard and on cat
