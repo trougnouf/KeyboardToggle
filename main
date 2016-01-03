@@ -31,8 +31,17 @@ Microchip	MRF39RAT-I/LY	$1.59	1.8-3.6V	433,868,918MHz	ISM		24-QFN
 Maxim		MAX7036GTP+	$1.738	3.3,5V		300-450MHz	ASK,OOK		20-TQFN-EP (5x5)
 Infineon	TDA7200		$1.954	4.5-5.5V	400-440MHz	ASK,FSK		28-TSSOP
 
-Solution 2.5: 
+Solution 2.5 (starting here): 
 Switch power with keyboard's built-in USB extension (optionally use another cable for poopkeyboards), make 2 "usb" devices, one of them connects to the computer and takes in 2 USB (kb and ext)
+
+PC board:
+USB male
+2x USB female
+
+KB board:
+0603SFV100F/32-2	FUSE BOARD MOUNT 1A 32VDC 0603
+USB male
+Sliding switch
 
 Solution 3.0:
 RFID tags around the keyboard and on cat
