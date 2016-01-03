@@ -207,7 +207,7 @@
   (gr_line (start 155.5 105.25) (end 142.25 105.25) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 155.5 115) (end 155.5 105.25) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 155.5 115) (end 142 115) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_text "Use only with USB-SW" (at 148.25 108.5) (layer B.SilkS)
+  (gr_text "To avoid autodestruction,\nuse only with USB-SW" (at 148.25 108.5) (layer B.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
   )
   (gr_text trougnouf (at 148 110) (layer B.Cu)

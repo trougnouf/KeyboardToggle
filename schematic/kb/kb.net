@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/trougnouf/Documents/Dev/KeyboardToggle/schematic/kb.sch)
-    (date "Sat 02 Jan 2016 08:50:32 PM EST")
+    (source /home/trougnouf/Documents/Dev/KeyboardToggle/schematic/kb/kb.sch)
+    (date "Sun 03 Jan 2016 04:43:19 PM EST")
     (tool "Eeschema 4.0.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -29,7 +29,7 @@
       (tstamp 56887A40))
     (comp (ref F1)
       (value 1A)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Resistors_SMD:R_1812)
       (libsource (lib device) (part FUSE))
       (sheetpath (names /) (tstamps /))
       (tstamp 56887A87)))
@@ -67,10 +67,10 @@
         (pin (num 4) (name GND) (type power_in))
         (pin (num 5) (name shield) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib)))
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib)))
   (nets
     (net (code 1) (name "Net-(F1-Pad1)")
       (node (ref P1) (pin 1))
