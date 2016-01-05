@@ -3,9 +3,9 @@
   (general
     (links 7)
     (no_connects 1)
-    (area 141.174999 114.924999 156.325001 115.075001)
+    (area 141.5125 101.295237 155.850001 129.257001)
     (thickness 1.6)
-    (drawings 13)
+    (drawings 14)
     (tracks 22)
     (zones 0)
     (modules 5)
@@ -257,6 +257,9 @@
       (net 8 "Net-(P1-Pad1)"))
   )
 
+  (gr_text "USB-SW(KB) 1.00" (at 148.25 104) (layer B.SilkS)
+    (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
+  )
   (gr_line (start 155.25 115) (end 155.5 115) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 144.25 115) (end 147.25 115) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 142 115) (end 144.25 115) (angle 90) (layer Edge.Cuts) (width 0.15))
@@ -271,7 +274,7 @@
   (gr_text "Use with USB-SW" (at 148.75 113) (layer B.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
   )
-  (gr_text trougnouf (at 147.5 110) (layer B.Cu)
+  (gr_text trougnouf (at 150 110) (layer B.Cu)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
 
