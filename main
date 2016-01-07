@@ -6,6 +6,12 @@ MCU:
 	alt:ATTINY48-AU	$1.088@10 on Digi-Key
 	alt:ATTINY85-20PU ($1.15 on tayda)
 	
+	
+	
+	
+	
+	
+	
 Solution 2:
 Connector on USB port (w/MCU), separate (wireless) controller, physically cut off USB power
 
@@ -27,7 +33,7 @@ ATTINY13A-SSU	$1.088	6 I/O
 
 RF receivers: 5v pref
 Silicon Labs	SI4356-B1A-FM	$1.39	1.8-3.6V	315-917MHz	FSK,GFSK,OOK	20-QFN
-Microchip	MRF39RAT-I/LY	$1.59	1.8-3.6V	433,868,918MHz	ISM		24-QFN
+Microchip	MRF39RAT-I/LY	$1.59	1.8-3.6V	433,868,918MHz	ISM		24-QFN     
 Maxim		MAX7036GTP+	$1.738	3.3,5V		300-450MHz	ASK,OOK		20-TQFN-EP (5x5)
 Infineon	TDA7200		$1.954	4.5-5.5V	400-440MHz	ASK,FSK		28-TSSOP
 
@@ -35,13 +41,34 @@ Solution 2.5 (starting here):
 Switch power with keyboard's built-in USB extension (optionally use another cable for poopkeyboards), make 2 "usb" devices, one of them connects to the computer and takes in 2 USB (kb and ext)
 
 PC board:
-USB male
-2x USB female
+$.129	USB male
+$.48	2x USB female
+$.28	PCB 1.17*.83
+= $0.77+PCB+cable
 
 KB board:
-0603SFV100F/32-2	FUSE BOARD MOUNT 1A 32VDC 0603
-USB male
-Sliding switch
+$.107	0603SFV100F/32-2	FUSE BOARD MOUNT 1A 32VDC 0603
+$.129	USB male
+$.0272	Sliding switch
+$.01	150-OHM resistor
+$.186	Red LED
+$.28*	PCB
+= $0.4592 + PCB
+
+Total cost: $1.2292+PCB = 1.7892 + smd mounting
+
+*@100
+
+TODO:
+Use USB cables on PCboard
+Case
+
+
+
+
+
+
+
 
 Solution 3.0:
 RFID tags around the keyboard and on cat
